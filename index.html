@@ -33,6 +33,7 @@
             background-color: #333;
             border-radius: 5px;
             margin: 0 10px;
+            display: inline-block; /* Added */
         }
         nav a:hover {
             background-color: #4CAF50; /* Green */
@@ -51,6 +52,7 @@
             border-radius: 5px;
             padding: 20px;
             background-color: #fff;
+            margin-bottom: 20px; /* Added */
         }
         .service-item h3 {
             margin-top: 0;
@@ -82,7 +84,7 @@
             text-align: center;
         }
         input[type="text"], input[type="email"], textarea {
-            width: 100%;
+            width: 100%; /* Changed */
             padding: 10px;
             margin-bottom: 10px;
             box-sizing: border-box;
@@ -94,9 +96,22 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            width: 100%; /* Added */
+            box-sizing: border-box; /* Added */
         }
         input[type="submit"]:hover {
             background-color: #45a049;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px; /* Adjusted padding for smaller screens */
+            }
+            nav a {
+                display: block; /* Convert navigation links to block for better mobile view */
+                margin: 10px 0; /* Added margin for better spacing */
+            }
         }
     </style>
 </head>
@@ -160,11 +175,11 @@
 
     <section id="contact" class="contact">
         <h2 class="section-heading">Contact Us @</h2>
-      <h3 class="section-heading">Phone:901-258-0020</h3>
-        
+        <h3 class="section-heading">Phone: 901-258-0020</h3>
     </section>
 
 </div>
 
 </body>
 </html>
+
